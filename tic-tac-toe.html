@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tic Tac Toe</title>
+
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial;
+            background-color: lightblue;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        .board {
+            width: 300px;
+            margin: 30px auto;
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            grid-template-rows: repeat(3, 100px);
+        }
+
+        .cell {
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            box-sizing: border-box;
+            font-size: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+        }
+
+        .cell:hover {
+            background-color: lightgray;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: darkblue;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Tic Tac Toe</h1>
+
+    <h2>Player X vs Player O</h2>
+
+    <div class="board">
+        <div class="cell">X</div>
+        <div class="cell">O</div>
+        <div class="cell">X</div>
+
+        <div class="cell">O</div>
+        <div class="cell">X</div>
+        <div class="cell">O</div>
+
+        <div class="cell">X</div>
+        <div class="cell">O</div>
+        <div class="cell">X</div>
+    </div>
+
+    <button>New Game</button>
+
+</body>
+</html>
